@@ -14,12 +14,6 @@
 # limitations under the License.
 #
 
-# Sample: This is where we'd set a backup provider if we had one
-# $(call inherit-product, device/sample/products/backup_overlay.mk)
-
-# Get the long list of APNs
-PRODUCT_COPY_FILES := device/sample/etc/apns-full-conf.xml:system/etc/apns-conf.xml
-
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
@@ -35,11 +29,6 @@ PRODUCT_RESTRICT_VENDOR_FILES := true
 $(call inherit-product, device/moto/shamu/device.mk)
 $(call inherit-product-if-exists, vendor/moto/shamu/device-vendor.mk)
 
-PRODUCT_NAME := full_shamu
-
-PRODUCT_PACKAGES += \
-    Launcher3
-
-#AOSP
-$(call inherit-product-if-exists, vendor/aosp/moto/shamu/full.mk)
-$(call inherit-product, device/aosp/common/full.mk)
+#JCROM
+$(call inherit-product, jcrom/moto/shamu/device-shamu.mk)
+$(call inherit-product, jcrom/common/common.mk)
