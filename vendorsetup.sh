@@ -14,7 +14,5 @@
 # limitations under the License.
 #
 
-add_lunch_combo aosp_shamu-user
-add_lunch_combo aosp_shamu-userdebug
-add_lunch_combo full_shamu-user
-add_lunch_combo full_shamu-userdebug
+add_lunch_combo jcrom_shamu-user
+add_lunch_combo jcrom_shamu-userdebug

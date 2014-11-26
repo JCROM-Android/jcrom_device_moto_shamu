@@ -25,7 +25,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=razor BUILD_FINGERPRINT=google/shamu/shamu:5.0/LRX21O/1570415:user/release-keys PRIVATE_BUILD_DESC="shamu-user 5.0 LRX21O 1570415 release-keys"
 
-PRODUCT_NAME := full_shamu
+PRODUCT_NAME := jcrom_shamu
 PRODUCT_DEVICE := shamu
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Nexus 6
