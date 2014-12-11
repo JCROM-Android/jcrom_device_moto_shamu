@@ -34,9 +34,9 @@ install_blobs() {
     done
 }
 
-MAGURO_BLOBS="broadcom-shamu-lrx21o-c5b4b7b3.tgz
-              moto-shamu-lrx21o-07a0a5f4.tgz
-              qcom-shamu-lrx21o-6c2fd35c.tgz"
+MAGURO_BLOBS="broadcom-shamu-lrx22c-602f9b2e.tgz
+              moto-shamu-lrx22c-b19e597a.tgz
+              qcom-shamu-lrx22c-ddeee8d1.tgz"
 
 CSUM_LIST="$PWD/blob-shasums"
 
